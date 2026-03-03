@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validating HTML Forms with JavaScript</title>
+
+    <link rel="stylesheet" href="styles/main.css">
+
+</head>
+<body>
+
+    <h1>Validating HTML Forms with JavaScript</h1>
+
+    <nav>
+        <ul class="nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Contact Form</h2>
+
+        <form>
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" class="required" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" class="required" required>
+
+            <label for="topic">Select a Topic:</label>
+            <select id="topic" name="topic" class="required" required>
+                <option value="">-- Please choose an option --</option>
+                <option value="general">General Question</option>
+                <option value="support">Support Request</option>
+                <option value="feedback">Website Feedback</option>
+            </select>
+
+            <input type="button" value="Submit" id="submitBtn">
+
+        </form>
+
+        <span id="missing-count"></span>
+    </main>
+    <script src="scripts/form-validation.js"></script>
+
+</body>
+</html>
